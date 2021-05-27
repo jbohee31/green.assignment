@@ -43,11 +43,23 @@
                 <option>여</option>
             </select><br/>
         <label for="mail">본인 확인 이메일(선택)</label><br/>
-        <input type="text" placeholder="선택입력">
+        <input type="text" placeholder="선택입력"><br/>
         <label for="number">휴대전화</label><br/>
         <table>
-            
+            <tr>
+                <td><select>
+                    <option>대한민국 +82</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="전화번호 입력"></td>
+                <td><button>인증번호 받기</button></td>
+            </tr>
+            <tr>
+                <td><input type="number" placeholder="인증번호 입력하세요"></td>
+            </tr>
         </table>
+        <input type="submit" value="가입하기">
     </form>
 </body>
 </html>
