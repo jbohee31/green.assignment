@@ -148,7 +148,7 @@ a{text-decoration: none;}
     /* 텍스트 */
 #third_section > #main_article > div.article_text{
     text-align: left;
-    background-color:#FBF5EF;
+    background-color: rgb(222,184, 135, 0.3);
     /* 배경만 투명도를 줄 수는 없을까요..? */
     width: 250px;
 }
@@ -246,4 +246,3 @@ a{text-decoration: none;}
     text-align: left;
     padding: 20px;
 }
-#footer > #main_footer > table 
