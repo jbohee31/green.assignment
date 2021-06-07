@@ -24,9 +24,6 @@ a{text-decoration: none;}
     height: 50px;
     font-size:15px; 
 }
-#header > #main_header > ul > li >a:hover{
-}
-
     /* 헤더 배경 */
 #header > #main_header{
     margin: 0 auto;
@@ -155,7 +152,7 @@ a{text-decoration: none;}
     /* 텍스트 */
 #third_section > #main_article > div.article_text{
     text-align: left;
-    background-color:rgb(248, 237, 215, 0.7);
+    background-color: rgb(248, 237, 215, 0.7);
     width: 250px;
 }
 #third_section > #sub_article > div.article_text{
@@ -272,7 +269,6 @@ a{text-decoration: none;}
     text-align: left;
     padding: 2px;
 }
-
 #footer > #main_footer > #last_text{
     display: block;
     text-align: right;
