@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+/* 초기화 */
+*{margin: 0; padding: 0;}
+body{font-family: 'Helvetica', sans-serif;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+/* 헤더 메뉴*/
+    /* 전체 메뉴 설정 */
+#header > #main_gnb > ul{
+    background-color: burlywood;
+    overflow: hidden;
+}
+#header > #main_gnb > ul > li{
+    float: left;
+    padding: 10px 20px;
+    line-height: 30px;
+}
+#header > #main_header > ul > li >a{
+    display: block;
+    height: 50px;
+    font-size:15px; 
+}
+#header > #main_header > ul > li >a:hover{
+}
+
+    /* 헤더 배경 */
+#header > #main_header{
+    margin: 0 auto;
+    background-image: url('header_img2.jpg');
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    width: 1000px; height: 600px;
+
+}
+    /* 헤더 제목 */
+#header >#main_header > div.main_title{
+    padding: 50px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+#header> #main_header > div.main_title > h1{
+    font-size: 65px;
+    margin-bottom: 40px;
+}
+#header > #main_header > div.main_title >input{
+    background-color: burlywood; 
+    width: 110px; height: 35px;
+    margin-top:20px;
+    color: black;
+    opacity:0.8 ;
+}
+
+/* 콘텐츠 */
+#content{
+    width: 1000px;
+    margin: 0 auto;
+}
+    /* section_1 이미지 */
+#content > #main_section{
+    width: 1000px;
+    overflow: hidden;
+}
+#main_section > #main_article{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 40px;
+    background-image: url('section_1.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 420px; height: 300px;
+    float: left;
+
+}
+#main_section > #sub_article{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 40px;
+    background-image: url('section_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 420px; height: 300px;
+    float: left;
+}
+#content > #main_section > #main_article > div.article_text:last-of-type{
+    color: grey;
+}
+#content > #main_section > #sub_article > div.article_text:last-of-type{
+    color: grey;
+}
+
+/* section_2 설정 */
+    /* 이미지 */
+#content > #second_section{
+    background-image: url('section_7.jpg');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 600px; width: 1000px;
+    
+}
+
+    /* 텍스트 */
+#content >#second_section > div.main_title{
+    padding: 70px;
+    line-height: 25px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+#content> #second_section >  div.main_title > h1{
+    font-size: 65px;
+    margin-bottom: 40px;
+    color: black
+}
+#content > #second_section > div.main_title >input{
+    background-color: burlywood; 
+    width: 110px; height: 35px;
+    margin-top:20px;
+    color: black;
+    opacity:0.8 ;
+}
+
+/* section_3 설정 */
+    /* 이미지 */
+#third_section > #main_article{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+    background-image: url('sound_img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 420px; height: 300px;
+    float: left;
+
+}
+#third_section > #sub_article{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+    background-image: url('lamo_img2.jpg');
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    width: 420px; height: 300px;
+    float: left;
+} 
+    /* 텍스트 */
+#third_section > #main_article > div.article_text{
+    text-align: left;
+    background-color:#FBF5EF;
+    /* 배경만 투명도를 줄 수는 없을까요..? */
+    width: 250px;
+}
+#third_section > #sub_article > div.article_text{
+    text-align: left;
+    background-color:#FBF5EF;
+    width: 250px;
+}
+#third_section > #main_article > div.article_text > h3,h6{
+    padding:  2px;
+}
+#third_section > #sub_article > div.article_text > h3,h6{
+    padding: 2px;
+}
+
+/* section_4 설정 */
+    /* 이미지 */
+#content > #fourth_section{
+    background-image: url('section_8.jpg');
+    background-size: 960px;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 400px; width: 960px;
+    text-align: right;
+    overflow: hidden; 
+    /* 이미지가 숨지 않고 나온다 */
+}
+    /* 텍스트 */
+#content >#fourth_section > div.main_title{
+    padding: 60px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+#content> #fourth_section >  div.main_title > h1{
+    font-size: 65px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+}
+#content > #fourth_section > div.main_title >input{
+    background-color: burlywood; 
+    width: 110px; height: 35px;
+    
+    color: black;
+    opacity:0.8 ;
+}
+
+/* section_5설정 */
+    /* 이미지 */
+#fifth_section > #main_article{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+    background-image: url('section_3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 420px; height: 300px;
+    float: left;
+    
+}
+#fifth_section > #sub_article{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+    background-image: url('section_5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 420px; height: 300px;
+    float: left;
+} 
+    /* 텍스트 */
+#fifth_section > #main_article > div.article_text{
+    text-align: left;
+    width: 250px;
+}
+#fifth_section > #sub_article > div.article_text{
+    text-align: left;
+    width: 250px;
+}
+#fifth_section > #main_article > div.article_text > h6{
+    color: grey;
+}
+#fifth_section > #sub_article > div.article_text > h6{
+    color: grey;
+}
+
+/* 푸터 */
+#footer{
+    background-color: rgb(30, 30, 30);
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#footer > #main_footer > table{
+    text-align: left;
+    padding: 20px;
+}
+#footer > #main_footer > table 
