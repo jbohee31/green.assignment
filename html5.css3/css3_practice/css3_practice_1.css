@@ -43,6 +43,7 @@ a{text-decoration: none;}
     font-size: 65px;
     margin-bottom: 40px;
 }
+
 #header > #main_header > div.main_title >input{
     font-weight: bold;
     background-color: burlywood; 
