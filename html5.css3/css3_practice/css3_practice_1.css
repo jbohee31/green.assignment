@@ -128,6 +128,9 @@ a{text-decoration: none;}
 
 /* section_3 설정 */
     /* 이미지 */
+#third_section{
+    overflow: hidden;
+}
 #third_section > #main_article{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -203,6 +206,9 @@ a{text-decoration: none;}
 
 /* section_5설정 */
     /* 이미지 */
+#fifth_section{
+    overflow: hidden;
+}
 #fifth_section > #main_article{
     margin-top: 10px;
     margin-bottom: 10px;
