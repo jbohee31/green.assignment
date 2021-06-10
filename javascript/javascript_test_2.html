@@ -45,6 +45,39 @@
     // var honybetter = 1300, cancho = 1500, pringles = 3000;  //과자 값 변수 지정
     // var change = 0; //거스름돈
 
+    var arr_1 = ["허니버터","칸쵸", "프링글스"];
+    var arr_2 = [1300, 1500, 3000];
+
+    if(money == 0){  //돈을 안넣었을때
+        alert("돈을 넣으세요.");
+        location.reload();
+     } else {  //돈을 넣었을때
+        snack = prompt("어떤 과자를 뽑으실 건가요?(허니버터, 칸쵸, 프링글스)", "");
+    
+    var noSnack = true;
+    
+    for(i in arr_1){
+        if(snack  == arr_1[i]){
+            change = money - arr_2[i]
+            noSnack = false;
+        }
+    }
+
+    if(noSnack){
+        alert("해당 과자가 없습니다.");
+        location.reload();
+    }
+
+    //돈이 모자를 경우를 판단하기 위한 식
+        if( change < 0){
+            alert("돈이 부족합니다.");
+            location.reload();
+        }else {
+            document.write(snack + "가 나왔습니다! 거스름돈은 " + change + "원 입니다.")
+        }
+    }
+
+
     // //돈을 넣었는지 안넣었는지 먼저 확인
     // if(money == 0){  //돈을 안넣었을때
     //     alert("돈을 넣으세요.");
