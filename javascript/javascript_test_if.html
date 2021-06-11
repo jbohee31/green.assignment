@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript_test_1</title>
     <script>
-        //문제1. 풀이
+        //문제1-1. 풀이
         // var num = prompt("정수 한 개를 입력해주세요.", "");
 
         // if(50 <= num){
@@ -15,7 +15,7 @@
         //     document.write("미만")
         // }
 
-        //문제2. 풀이
+        //문제1-2. 풀이
         // var num = prompt("정수 한 개를 입력해주세요.","");
 
         // if(num % 3 == 0){
@@ -24,31 +24,26 @@
         //     document.write("3의 배수가 아닙니다.");
         // }
 
-        //문제3. 풀이
+        //문제1-3. 풀이
         var str = prompt("당신은 몇 학년입니까?","");
         var level = prompt("당신은 몇 점을 받았나요?","");
-
-        if(str == 4){  //4학년일때
-            if(level >= 70){  //4학년이 70점이상일 때
-                if( 100 < level){
+        
+        if( 100 < level || 0 > level){   //에러메시지가 학년과 상관없이 창이 뜨니까 중괄호가 전체를 아우러야 함.
                 alert("에러입니다.");
-                location.reload(); }
-
+                location.reload(); 
+            if(str == 4){  //4학년일때
+            } if(level >= 70){  //4학년이 70점이상일 때
                 document.write("합격");  //true
             } else {  //4학년이 70점이상이 안될때
-                document.write("불합격");
-            } 
-        } else if( level >= 60){ //4학년이 아니고 점수가 60점 이상일때
-            if(100 < level){
-                alert("에러입니다.");
-                location.reload(); } 
-
-            document.write("합격");
-        } else {
             document.write("불합격");
-        } 
-
-        // 점수가 0미만일 때 에러메시지 적용안됨.
+            } 
+            if(str != 4){
+            } if( level >= 60){ //4학년이 아니고 점수가 60점 이상일때
+            document.write("합격");
+            } else {
+            document.write("불합격");
+            } 
+        }  //***
     </script>
 </head>
 <body>
